@@ -1,0 +1,29 @@
+body {
+
+    min-height: 100vh;
+    background: url("img/fondo.jpg") center/cover no-repeat;
+}
+
+.body::before {
+    content: "";
+    position: relative;
+    inset: 0;
+    background: url("img/fondo.jpg") center/cover no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.card {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+}
