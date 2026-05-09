@@ -2,6 +2,8 @@ body {
 
     min-height: 100vh;
     background: url("img/fondo.jpg") center/cover no-repeat;
+    background-color: rgba(0,0,0,0.2);
+    background-blend-mode: darken;
 }
 
 .body::before {
@@ -11,6 +13,10 @@ body {
     background: url("img/fondo.jpg") center/cover no-repeat;
     filter: blur(5px);
     z-index: -1;
+}
+
+.navbar{
+    margin-bottom: 30px;
 }
 
 .card {
@@ -26,4 +32,116 @@ body {
 .card-img-top {
     height: 200px;
     object-fit: contain;
+}
+
+.card{
+
+    background-image: url("img/Wood.png");
+
+    background-size: 100% 100%;
+
+    background-clip: content-box;
+
+    background-repeat: no-repeat;
+
+    image-rendering: pixelated;
+
+    border: 4px solid #8b5a2b;
+
+    border-radius: 15px;
+
+    color: #ffffff;
+
+    transition: 0.3s;
+
+}
+
+
+.categoria-btn{
+
+    background-image: url("img/wood.png");
+
+    background-size: 100% 100%;
+
+    background-repeat:repeat;
+
+    background-position: center;
+
+    image-rendering: pixelated;
+
+    border: 4px solid #8b5a2b;
+
+    border-radius: 15px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-family: "Press Start 2p", cursive;
+
+    text-decoration: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 80px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+
+    transition: 0.2s;
+
+}
+
+.categoria-btn:hover{
+
+    transform: scale(1.05);
+
+    color: rgb(134, 134, 134);
+
+}
+
+body{
+    font-family: "Press Start 2P", cursive;
+
+    font-size: 10px;
+
+    color: #ee9004e1;
+
+    border-color: black;
+
+    text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+.btn-comprar{
+
+    background-color: green;
+
+    border: #000;
+
+    color: white;
+
+    width: 75%;
+
+    padding: 15px;
+
+    font-family: "Press Start 2P", cursive;
+
+    text-shadow:
+        2px 2px 0 black;
+
+    transition: 0.2s;
+
+}
+
+.btn-comprar:hover{
+
+    transform: scale(1.03);
+
 }

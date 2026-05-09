@@ -145,7 +145,7 @@ if (contenedor) {
 
                     </div>
 
-                    <button class="btn btn-primary w-100">
+                    <button class="btn-comprar">
                         Comprar
                     </button>
 
