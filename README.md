@@ -1,6 +1,42 @@
-# stardew-market
+# Stardew Market
 
-Alumno: Juan Cruz Ripanti
+## Descripción
+Proyecto realizado para la materia Aplicaciones Web 1.
 
-Descripción:
-Este proyecto se basa en una pagina web para la materia de Aplicaciones Web 1 en IES21, mi idea es hacer una pagina E-commerce del popular juego Stardew Valley, en esta pagina seria una forma de "actualizar" la forma de venta de nuestra granja por medio de la web, como pedidos personalizados. La idea viene ya que buscaba de que poder hacer mi pagina y hace unas semanas empeze a jugar este juego con mi novia y nos encanto mucho a los 2 y pense en que era algo distinto y el diseño que tiene el juego me gusta mucho y se podria ver reflejado muy bien en una pagina.
+## Tecnologías utilizadas
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+- LocalStorage
+
+## Roadmap de Desarrollo
+
+### Etapa 1
+- Diseño inicial de la interfaz.
+- Creación de páginas principales.
+
+### Etapa 2
+- Implementación de categorías.
+- Carga de productos mediante JSON.
+
+### Etapa 3
+- Sistema de Login y Registro.
+
+### Etapa 4
+- Carrito de compras.
+- Gestión de cantidades.
+- Resumen de compra.
+
+### Etapa 5
+- Mejoras visuales.
+- Responsive.
+- Optimización de la experiencia de usuario.
+
+## Mejoras Implementadas
+- Carrito flotante.
+- Sistema de cantidades.
+- Persistencia con LocalStorage.
+
+## Autor
+Juan Ripanti
