@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Leche Grande",
+        "descripcion": "Leche fresca de alta calidad.",
+        "precio": 350,
+        "imagen": "assets/img/Large_Milk.webp"
+    },
+    {
+        "nombre": "Huevo XXL",
+        "descripcion": "Un huevo de excelente calidad.",
+        "precio": 190,
+        "imagen": "assets/img/Large_Brown_Egg.png"
+    },
+    {
+        "nombre": "Lana",
+        "descripcion": "Lana suave obtenida de una oveja.",
+        "precio": 340,
+        "imagen": "assets/img/Wool.png"
+    }
+]

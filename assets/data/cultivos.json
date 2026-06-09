@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Fruta Milenaria",
+        "descripcion": "Una fruta antigua muy valiosa.",
+        "precio": 550,
+        "imagen": "../assets/img/Ancient_fruit.webp"
+    },
+    {
+        "nombre": "Melón",
+        "descripcion": "Un cultivo dulce de verano.",
+        "precio": 250,
+        "imagen": "../assets/img/Melon.webp"
+    },
+    {
+        "nombre": "Coliflor",
+        "descripcion": "Una gran coliflor de primavera.",
+        "precio": 175,
+        "imagen": "../assets/img/Coliflor.webp"
+    }
+]

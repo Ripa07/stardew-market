@@ -1,0 +1,325 @@
+body {
+    min-height: 100vh;
+
+    background: url("../assets/img/fondo.jpg") center/cover no-repeat;
+
+    background-color: rgba(0,0,0,0.2);
+
+    background-blend-mode: darken;
+
+    font-family: "Press Start 2P", cursive;
+
+    font-size: 10px;
+
+    color: #ee9004e1;
+
+    border-color: black;
+
+    text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+body::before {
+    content: "";
+    position: relative;
+    inset: 0;
+    background: url("../assets/img/fondo.jpg") center/cover no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.hero{
+
+    min-height: 100vh;
+
+    background-image: url("../assets/img/fondo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    margin-bottom: 50px;
+
+}
+
+.hero-overlay{
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.35);
+
+}
+
+.hero-content{
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    max-width: 700px;
+
+    padding: 20px;
+
+}
+
+.hero-logo{
+
+    width: 700px;
+
+    max-width: 100%;
+
+    margin-bottom: 20px;
+
+}
+
+.hero-content h1{
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
+}
+
+.hero-content p{
+
+    font-size: 1rem;
+
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 0 30px #0009;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card-img-top {
+    height: 140px;
+    object-fit: contain;
+    margin-top: 30px;
+}
+
+.card{
+
+    background-clip: content-box;
+
+    image-rendering: pixelated;
+
+    color: #ffffff;
+
+    transition: 0.3s;
+
+    margin-bottom: auto;
+
+
+}
+
+.card-stardew{
+
+    background-image: url("../assets/img/wood.png");
+
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+
+    border: 4px solid #8b5a2b;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.card-title{
+    min-height: 50px;
+    margin: 10px 0;
+}
+
+.card-text{
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+
+.categoria-btn{
+
+    background-image: url("../assets/img/wood.png");
+
+    background-size: 100% 100%;
+
+    background-position: center;
+
+    image-rendering: pixelated;
+
+    border: 4px solid #8b5a2b;
+
+    border-radius: 15px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-family: "Press Start 2p", cursive;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 80px;
+
+    box-shadow: 0px 0px 25px #0009;
+
+    transition: 0.2s;
+
+    margin-top: 15px;
+
+
+}
+
+.card-stardew, .categoria-btn{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.categoria-btn:hover{
+
+    transform: scale(1.05);
+
+    color: rgb(134, 134, 134);
+
+}
+
+.btn-comprar{
+
+    background-color: rgb(2, 94, 15);
+
+    border: 2px solid black;
+
+    border-radius: 15px;
+
+    color: white;
+
+    width: 75%;
+
+    padding: 12px;
+
+    font-family: "Press Start 2P", cursive;
+
+    text-shadow: 2px 2px 0 black;
+
+    transition: 0.2s;
+
+    box-sizing: content-box;
+
+}
+
+.btn-comprar:hover{
+
+    transform: scale(1.03);
+
+}
+
+.contenedor-boton{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.categoria-titulo a{
+    color: #ee9004e1 !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.categoria-titulo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.categoria-titulo a:hover{
+    color: white !important;
+    transform: scale(1.03);
+}
+
+/* LOGIN Y REGISTRO */
+
+.login-card{
+    background-image: url("../assets/img/wood.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    max-width: 500px;
+    width: 100%;
+
+    border: none;
+
+    margin: auto;
+    
+    display: flex;
+
+    flex-wrap: nowrap;
+}
+
+.login-card-body{
+    padding: 30px;
+}
+
+
+.login-card label {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 8px;
+    text-shadow: none;
+}
+
+.login-card input {
+    text-shadow: none;
+    font-size: 13px;
+}
+
+.login-card h3 {
+    text-align: center;
+    margin: 25px;
+}
+
+::placeholder {
+    font-size: 10px;
+    opacity: 0.7;
+}
