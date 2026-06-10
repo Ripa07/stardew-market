@@ -163,12 +163,11 @@ body::before {
 
 .card-title{
     min-height: 50px;
-    margin: 10px 0;
+    margin: 0px 0;
 }
 
 .card-text{
     min-height: 50px;
-    margin-bottom: 10px;
 }
 
 .categoria-btn{
@@ -472,4 +471,8 @@ background-image: url("../assets/img/wood.png");
     box-shadow: 0 0 50px #0009;
 
     background-color: rgb(242, 68, 68);
+}
+
+.carrito-titulo{
+    padding-top: 20px;
 }

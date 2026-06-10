@@ -4,10 +4,45 @@ const paginas = [
     { nombre: "Productos animales", link: "animales.html" },
     { nombre: "Peces", link: "peces.html" }
 ];
+const formLogin = document.getElementById("formLogin");
+
+if (formLogin) {
+
+    formLogin.addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        localStorage.setItem("logueado", "true");
+
+        window.location.href = "index.html";
+
+    });
+
+}
+
+const formRegistro = document.getElementById("formRegistro");
+
+if (formRegistro) {
+
+    formRegistro.addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        const nombre = document.getElementById("nombre").value;
+
+        localStorage.setItem("nombreUsuario", nombre);
+        localStorage.setItem("logueado", "true");
+
+        window.location.href = "index.html";
+
+    });
+
+}
 
 function logout() {
 
     localStorage.removeItem("logueado");
+    localStorage.removeItem("nombreUsuario");
 
     window.location.href = "login.html";
 
@@ -50,27 +85,35 @@ if (navbar) {
                 </ul>
     `;
 
-    if (localStorage.getItem("logueado")) {
+    const nombreUsuario = localStorage.getItem("nombreUsuario");
 
-        contenido += `
-        <button onclick="logout()" class="btn btn-danger">
-            Logout
-        </button>
-        `;
+if (localStorage.getItem("logueado")) {
 
-    } else {
+    contenido += `
 
-        contenido += `
-        <a href="login.html" class="btn btn-outline-light btn-sm me-2">
-            Login
-        </a>
+    <span class="navbar-text text-white me-3">
+        Hola ${nombreUsuario || "Granjero"} 👋
+    </span>
 
-        <a href="registro.html" class="btn btn-success btn-sm">
-            Sign up
-        </a>
-        `;
+    <button onclick="logout()" class="btn btn-danger btn-sm">
+        Logout
+    </button>
 
-    }
+    `;
+
+} else {
+
+    contenido += `
+    <a href="login.html" class="btn btn-outline-light btn-sm me-2">
+        Login
+    </a>
+
+    <a href="registro.html" class="btn btn-success btn-sm">
+        Sign up
+    </a>
+    `;
+
+}
 
     contenido += `
             </div>
@@ -236,40 +279,6 @@ function cambiarCantidad(boton, cambio) {
 
 }
 
-const formulario = document.querySelector("form");
-
-if (formulario) {
-
-    formulario.addEventListener("submit", function(e) {
-
-        e.preventDefault();
-
-        const email = document.getElementById("email").value;
-
-        localStorage.setItem("logueado", "true");
-
-        sessionStorage.setItem("usuario", email);
-
-        window.location.href = "index.html";
-
-    });
-
-}
-
-const formularioRegistro = document.querySelector("form");
-
-if (formularioRegistro) {
-
-    formularioRegistro.addEventListener("submit", function(e) {
-
-        e.preventDefault();
-
-        localStorage.setItem("logueado", "true");
-
-        window.location.href = "index.html";
-
-    });
-}
 
 function agregarAlCarrito(boton, producto) {
 
@@ -471,7 +480,7 @@ function cambiarCantidadCarrito(indice, cambio) {
 
 function finalizarCompra() {
 
-    alert("¡Gracias por tu compra!");
+    alert("¡Gracias por tu compra en Stardew Market!");
 
     localStorage.removeItem("carrito");
 
