@@ -44,7 +44,7 @@ function logout() {
     localStorage.removeItem("logueado");
     localStorage.removeItem("nombreUsuario");
 
-    window.location.href = "pages/login.html";
+    window.location.href = "/pages/login.html";
 
 }
 
