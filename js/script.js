@@ -57,7 +57,7 @@ if (navbar) {
         <div class="container-fluid">
 
             <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                <img src="assets/img/logo.png" alt="logo" width="50" class="me-2">
+                <img src="../assets/img/logo.png" alt="logo" width="50" class="me-2">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
