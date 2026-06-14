@@ -6,13 +6,6 @@ https://stardew-market.vercel.app/index.html
 ## Descripción
 Proyecto realizado para la materia Aplicaciones Web 1.
 
-## Tecnologías utilizadas
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
-- LocalStorage
-
 ## Roadmap de Desarrollo
 
 ### Etapa 1
