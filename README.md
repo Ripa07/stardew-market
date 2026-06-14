@@ -36,10 +36,30 @@ Proyecto realizado para la materia Aplicaciones Web 1.
 - Responsive.
 - Optimización de la experiencia de usuario.
 
-## Mejoras Implementadas
-- Carrito flotante.
-- Sistema de cantidades.
-- Persistencia con LocalStorage.
+## Tecnologías utilizadas
 
-## Autor
+### HTML5
+Se utilizó para estructurar el contenido del sitio.
+
+### CSS3
+Se utilizó para personalizar la apariencia visual y la identidad gráfica del ecommerce.
+
+### JavaScript
+Se utilizó para implementar la lógica del sitio, la carga de productos y el funcionamiento del carrito.
+
+### Bootstrap 5
+Se eligió Bootstrap para facilitar el diseño responsive y acelerar la creación de componentes como navbar, formularios y cards.
+
+### LocalStorage
+Se utilizó para mantener la sesión del usuario y almacenar los productos agregados al carrito.
+
+## Mejora Significativa
+
+La mejora más importante incorporada fue la implementación de un sistema completo de carrito de compras con persistencia mediante LocalStorage, gestión de cantidades, contador dinámico de productos, resumen de compra y finalización de pedido.
+
+## Video Explicativo
+
+https://www.youtube.com/watch?v=L5cNewtdHDQ
+
+## Autor 
 Juan Ripanti
