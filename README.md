@@ -8,26 +8,32 @@ Proyecto realizado para la materia Aplicaciones Web 1.
 
 ## Roadmap de Desarrollo
 
-### Etapa 1
+### Etapa 1 - Planificación y Diseño
 - Diseño inicial de la interfaz.
-- Creación de páginas principales.
+- Definición de la temática del ecommerce.
+- Creación de las páginas principales.
 
-### Etapa 2
+### Etapa 2 - Gestión de Productos
 - Implementación de categorías.
-- Carga de productos mediante JSON.
+- Organización de productos por secciones.
+- Carga dinámica mediante archivos JSON.
 
-### Etapa 3
-- Sistema de Login y Registro.
+### Etapa 3 - Sistema de Usuarios
+- Desarrollo del sistema de Registro.
+- Implementación del Login.
+- Persistencia de sesión mediante LocalStorage.
 
-### Etapa 4
-- Carrito de compras.
+### Etapa 4 - Carrito de Compras
+- Agregado de productos al carrito.
 - Gestión de cantidades.
-- Resumen de compra.
+- Resumen de compra dinámico.
+- Eliminación y vaciado de productos.
 
-### Etapa 5
-- Mejoras visuales.
-- Responsive.
+### Etapa 5 - Optimización y Mejoras
+- Mejoras visuales y de diseño.
+- Adaptación responsive para distintos dispositivos.
 - Optimización de la experiencia de usuario.
+- Corrección de errores y validación final del proyecto.
 
 ## Tecnologías utilizadas
 
