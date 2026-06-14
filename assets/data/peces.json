@@ -3,18 +3,18 @@
         "nombre": "Pez Glacial",
         "descripcion": "Un pez raro encontrado en invierno.",
         "precio": 1000,
-        "imagen": "assets/img/Glacierfish.webp"
+        "imagen": "../assets/img/Glacierfish.webp"
     },
     {
         "nombre": "Atún",
         "descripcion": "Un pez oceánico muy apreciado.",
         "precio": 250,
-        "imagen": "assets/img/Tuna.webp"
+        "imagen": "../assets/img/Tuna.webp"
     },
     {
         "nombre": "Esturión",
         "descripcion": "Un pez valioso de montaña.",
         "precio": 500,
-        "imagen": "assets/img/Sturgeon.png"
+        "imagen": "../assets/img/Sturgeon.png"
     }
 ]
