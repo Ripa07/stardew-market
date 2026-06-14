@@ -1,8 +1,8 @@
 const paginas = [
-    { nombre: "Home", link: "index.html" },
-    { nombre: "Cultivos", link: "cultivos.html" },
-    { nombre: "Productos animales", link: "animales.html" },
-    { nombre: "Peces", link: "peces.html" }
+    { nombre: "Home", link: "../index.html" },
+    { nombre: "Cultivos", link: "../pages/cultivos.html" },
+    { nombre: "Productos animales", link: "../pages/animales.html" },
+    { nombre: "Peces", link: "../pages/peces.html" }
 ];
 const formLogin = document.getElementById("formLogin");
 
@@ -14,7 +14,7 @@ if (formLogin) {
 
         localStorage.setItem("logueado", "true");
 
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
 
     });
 
@@ -33,7 +33,7 @@ if (formRegistro) {
         localStorage.setItem("nombreUsuario", nombre);
         localStorage.setItem("logueado", "true");
 
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
 
     });
 
@@ -44,7 +44,7 @@ function logout() {
     localStorage.removeItem("logueado");
     localStorage.removeItem("nombreUsuario");
 
-    window.location.href = "login.html";
+    window.location.href = "../pages/login.html";
 
 }
 
@@ -56,8 +56,8 @@ if (navbar) {
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1">
         <div class="container-fluid">
 
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/img/logo.png" alt="logo" width="50" class="me-2">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../assets/img/logo.png" alt="logo" width="50" class="me-2">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -104,11 +104,11 @@ if (localStorage.getItem("logueado")) {
 } else {
 
     contenido += `
-    <a href="login.html" class="btn btn-outline-light btn-sm me-2">
+    <a href="../pages/login.html" class="btn btn-outline-light btn-sm me-2">
         Login
     </a>
 
-    <a href="registro.html" class="btn btn-success btn-sm">
+    <a href="../pages/registro.html" class="btn btn-success btn-sm">
         Sign up
     </a>
     `;
@@ -214,7 +214,7 @@ function crearCard(p) {
 
 if (contenedorCultivos) {
 
-    fetch("assets/data/cultivos.json")
+    fetch("../assets/data/cultivos.json")
         .then(response => response.json())
         .then(productos => {
 
@@ -230,7 +230,7 @@ if (contenedorCultivos) {
 
 if (contenedorAnimales) {
 
-    fetch("assets/data/animales.json")
+    fetch("../assets/data/animales.json")
         .then(response => response.json())
         .then(productos => {
 
@@ -246,7 +246,7 @@ if (contenedorAnimales) {
 
 if (contenedorPeces) {
 
-    fetch("assets/data/peces.json")
+    fetch("../assets/data/peces.json")
         .then(response => response.json())
         .then(productos => {
 
@@ -304,7 +304,7 @@ function comprarAhora(boton, producto) {
 
     agregarAlCarrito(boton, producto);
 
-    window.location.href = "carrito.html";
+    window.location.href = "../pages/carrito.html";
 
 }
 
@@ -416,7 +416,7 @@ function eliminarDelCarrito(indice) {
 
 function irAlCarrito() {
 
-    window.location.href = "carrito.html";
+    window.location.href = "../pages/carrito.html";
 
 }
 
@@ -484,6 +484,6 @@ function finalizarCompra() {
 
     localStorage.removeItem("carrito");
 
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 
 }
